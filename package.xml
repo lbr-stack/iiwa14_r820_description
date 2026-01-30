@@ -3,7 +3,7 @@
 <package format="3">
   <name>iiwa14_description</name>
   <version>2.5.0</version>
-  <description>KUKA LBR IIWA 14 description files</description>
+  <description>KUKA LBR IIWA 14 R820 description files</description>
   <maintainer email="m.huber_1994@hotmail.de">mhubii</maintainer>
   <license>Apache-2.0</license>
 

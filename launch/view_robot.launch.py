@@ -29,7 +29,9 @@ def generate_launch_description() -> LaunchDescription:
                             [
                                 FindExecutable(name="xacro"),
                                 " ",
-                                PathSubstitution(FindPackageShare("iiwa14_description"))
+                                PathSubstitution(
+                                    FindPackageShare("iiwa14_r820_description")
+                                )
                                 / "urdf"
                                 / "iiwa14.urdf.xacro",
                                 " robot_name:=",
@@ -53,7 +55,7 @@ def generate_launch_description() -> LaunchDescription:
                 arguments=[
                     [
                         "-d",
-                        PathSubstitution(FindPackageShare("iiwa14_description"))
+                        PathSubstitution(FindPackageShare("iiwa14_r820_description"))
                         / "rviz"
                         / "view_robot.rviz",
                     ]

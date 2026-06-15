@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <!-- top level -->
-<robot name="iiwa14" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="lbr_iiwa14_r820" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <!-- include the iiwa 14 R820 macro -->
     <xacro:include filename="$(find lbr_iiwa14_r820_description)/urdf/lbr_iiwa14_r820_macro.xacro" />
@@ -13,7 +13,7 @@
         default="$(find lbr_iiwa14_r820_description)/config/joint_limits.yaml" />
 
     <!-- iiwa 14 R820 description -->
-    <xacro:iiwa14_r820
+    <xacro:lbr_iiwa14_r820
         robot_name="$(arg robot_name)"
         joint_limits_path="$(arg joint_limits_path)" />
 </robot>
